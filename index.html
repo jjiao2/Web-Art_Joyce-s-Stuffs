@@ -5,10 +5,33 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=2880, initial-scale=1">
       <style>
+      .topnav {
+        overflow: hidden;
+        background-color: black;
+      }
 
-li a:hover {
+      .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        margin-left: 250px;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: black;
+        color: white;
+      }
+      li a:hover {
     background-color: #111;
-}
+      }
         * {
           box-sizing: border-box;
         }
@@ -151,7 +174,12 @@ li a:hover {
 </head>
 
 <body>
-
+  <div class="topnav">
+    <a class="active" href="#WHAT">WHAT</a>
+    <a href="IS">IS</a>
+    <a href="THE">THE</a>
+    <a href="POINT">POINT</a>
+  </div>
 <div class="sidenav">
   <div style="text-align:center;" id="profilepic">
           <img src="https://78.media.tumblr.com/0e5b93ea2a58de76bd47204008bf5a2d/tumblr_pfc5atDK971taorh5o1_1280.jpg" alt="fish" style="width:85%">

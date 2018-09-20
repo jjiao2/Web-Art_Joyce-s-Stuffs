@@ -40,8 +40,8 @@
 
         /* Change color on hover */
         .sidenav a:hover {
-          background-color: blue;
-          color: blue;
+          background-color: orange;
+          color: grey;
         }
 
         /* Style the content */
@@ -50,53 +50,104 @@
           padding-left: 20px;
         }
 
-p.center {
-    text-align: center;
-    color: blue;
-}
-/* Style the MEWO */
-#MEWO{
-  text-align: center;
-  color: mediumseagreen;
+        p.center {
+          text-align: center;
+          color: blue;
+        }
+        /* Style the MEWO */
+        #MEWO{
+          text-align: center;
+          color: mediumseagreen;
+        }
+
+        /* Style the Plan */
+        #Plan{
+        margin-right: 200px;
+        padding-left: 50px;;
+        color: orange;
+        font-size: 30px;
+        font-family: courier;
+      }
+
+      /* Style the project1 */
+      #project1{
+      margin-right: 200px;
+      padding-left: 700px;;
+      color: pink;
+      font-size: 20px;
+      font-family: courier;
+    }
+      /* Style the barcode */
+      .barcode{
+        text-align: center;
+        color: mediumseagreen;
+        font-family: monotype corsiva;
+      }
+      body {
+        background-color: rgb(60, 60, 60);
+      }
+      /* style the this */
+      .this{
+      text-align: center;
+      color: white;
+      padding-left: 500px;
+      font-family: monotype corsiva;
+      }
+
+      p.center {
+      text-align: center;
+      color: mediumseagreen;
+      }
+
+.tech-slideshow {
+  height: 200px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
-p.center {
-    text-align: center;
-    color: mediumseagreen;
+.tech-slideshow > div {
+  height: 200px;
+  width: 2526px;
+  background: url(https://78.media.tumblr.com/c1833a19b69b139247d3a84921bcd5cb/tumblr_p9zh9sThSz1taorh5o9_1280.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
 }
-/* Style the barcode */
-.barcode{
-  text-align: center;
-  color: mediumseagreen;
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 12s linear infinite;
 }
-body {
-    background-color: rgb(60, 60, 60);
+.tech-slideshow .mover-2 {
+  opacity: 100;
+  transition: opacity 2s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
 }
-/* style the this */
-.this{
-  text-align: center;
-  color: white;
-  padding-left: 500px !important;
-}
-
-p.center {
-    text-align: center;
-    color: mediumseagreen;
-}
-/* style the marquee1 */
-.marquee1
-  color: purple
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
 }
 
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
 </style>
 </head>
 
 <body>
 
 <div class="sidenav">
+  <div style="text-align:center;" id="profilepic">
+          <img src="https://78.media.tumblr.com/0e5b93ea2a58de76bd47204008bf5a2d/tumblr_pfc5atDK971taorh5o1_1280.jpg" alt="fish" style="width:80%">
+  </div>
   <a href="https://www.instagram.com/bluebirdieball/">instagram</a>
   <a href="#">Non-exsist portfolio page</a>
-  <a href="#">Link</a>
+  <a href="https://bluebirdieball.tumblr.com/">tumblr</a>
 </div>
 
 <div class="content">
@@ -112,9 +163,31 @@ p.center {
 </div>
       <p id="MEWO"> MEWO
       </p>
-<div class="marquee1">
       <marquee direction="right"
       scrollamount="500">Naaaaaaaaaaaaaaaaaah</marquee>
+      <marquee direction="left"
+      scrollamount="500">Naaaaaaaaaaaaaaaaaah</marquee>
 </div>
+<div class="tech-slideshow">
+  <div class="mover-1"></div>
+  <div class="mover-2"></div>
+</div>
+
+</div>
+      <p id="Plan"> Plan of The Semester
+      </p>
+</div>
+</div>
+      <ol id="project1">
+          <li>90-page feature length script.</li>
+          <li>THE ANIMATION.</li>
+          <li>Go to class.</li>
+          <li>Be on time.(probabaly in my dream for most of the time)</li>
+          <li>:-)</li>
+      </ol>
+      <marquee direction="right"
+      scrollamount="200">I'm gonna finish this! Ass I can! Ass I will</marquee>
+</div>
+
 </body>
 </html>

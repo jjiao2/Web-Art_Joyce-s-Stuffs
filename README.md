@@ -1,4 +1,4 @@
 # Web-Art_Joyce-s-Stuffs
 I believe it will work
-git@github.com:jjiao2/Web-Art_Joyce-s-Stuffs.git
+https://jjiao2.github.io/Web-Art_Data-Diary_and-Stuff/
 Yayy
